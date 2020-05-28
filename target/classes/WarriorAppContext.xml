@@ -7,5 +7,6 @@
 	   >
 
 	<bean id="warrior" class="org.tyaa.springcontextdemo2.implementations.Warrior"></bean>
-	<bean id="sword" class="org.tyaa.springcontextdemo2.implementations.Sword"></bean>
+	<!-- Sword isn't a candid -->
+	<bean id="sword" class="org.tyaa.springcontextdemo2.implementations.Sword" autowire-candidate="false"></bean>
 </beans>
